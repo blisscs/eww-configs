@@ -1,0 +1,22 @@
+* {
+  all: unset;
+  font-family: "Iosevka";
+  font-size: 12px;
+}
+
+.bar {
+  background-color: #24273a;
+  color: #cad3f5;
+  border: 1px solid #8892f0;
+  padding: 0 12px;
+}
+
+.left,
+.center,
+.right {
+  padding: 0 6px;
+}
+
+.clock {
+  letter-spacing: 0.5px;
+}

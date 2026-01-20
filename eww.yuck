@@ -1,0 +1,17 @@
+(defpoll time :interval "1s" "date '+%a %b %d %H:%M'")
+
+(defwidget bar []
+  (box :class "bar" :orientation "h"
+    (box :class "left" :hexpand true)
+    (label :class "center" :text "Topbar")
+    (box :class "right" :hexpand true :halign "end"
+      (label :class "clock" :text time))))
+
+(defwindow topbar
+  :monitor 0
+  :geometry (geometry :x "0" :y "0" :width "100%" :height "32px")
+  :anchor "top center"
+  :exclusive true
+  :stacking "fg"
+  :reserve (struts :side "top" :distance "32px")
+  (bar))
