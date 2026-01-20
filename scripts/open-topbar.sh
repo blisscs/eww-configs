@@ -16,6 +16,6 @@ if ! command -v jq >/dev/null 2>&1; then
   exit 1
 fi
 
-hyprctl monitors -j | jq -r '.[].id' | while read -r monitor_id; do
-  eww open --screen "$monitor_id" topbar
+hyprctl monitors -j | jq -r '.[] | select(.disabled == false) | .name' | while read -r monitor_name; do
+  eww open --id "topbar-$monitor_name" --screen "$monitor_name" topbar
 done
