@@ -1,6 +1,6 @@
 # Eww Configs
 
-This repository hosts the `eww.yuck` configuration file for Eww.
+This repository hosts the `eww.yuck` and `eww.scss` configuration files for Eww.
 
 ## Create a static link to the config folder
 
@@ -18,4 +18,9 @@ If a file already exists at the destination, remove it first:
 rm -rf "$HOME/.config/eww"
 ```
 
-You can now start Eww with the linked config.
+You can now start Eww with the linked config:
+
+```bash
+eww daemon
+eww open topbar
+```
