@@ -22,5 +22,5 @@ You can now start Eww with the linked config:
 
 ```bash
 eww daemon
-eww open topbar
+./scripts/open-topbar.sh
 ```
