@@ -7,8 +7,8 @@ This repository hosts the `eww.yuck` configuration file for Eww.
 Use a symbolic link so Eww always reads the file from this repo:
 
 ```bash
-# From anywhere
-ln -s /home/suracheth-chawla/configs/eww-configs/eww.yuck \
+# From the repository root
+ln -s "$(pwd)/eww.yuck" \
   "$HOME/.config/eww/eww.yuck"
 ```
 
