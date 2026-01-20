@@ -2,20 +2,20 @@
 
 This repository hosts the `eww.yuck` configuration file for Eww.
 
-## Create a static link to `eww.yuck`
+## Create a static link to the config folder
 
-Use a symbolic link so Eww always reads the file from this repo:
+Use a symbolic link so Eww reads the entire config directory from this repo:
 
 ```bash
 # From the repository root
-ln -s "$(pwd)/eww.yuck" \
-  "$HOME/.config/eww/eww.yuck"
+ln -s "$(pwd)" \
+  "$HOME/.config/eww"
 ```
 
 If a file already exists at the destination, remove it first:
 
 ```bash
-rm "$HOME/.config/eww/eww.yuck"
+rm -rf "$HOME/.config/eww"
 ```
 
 You can now start Eww with the linked config.
